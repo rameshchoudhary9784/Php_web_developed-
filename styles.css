@@ -1,0 +1,45 @@
+.logo a {
+    color: #000;
+}
+
+
+
+.nav-profile {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-profile img {
+    width: 50px;
+}
+.nav-profile div {
+    position: absolute;
+    top: 127%;
+    right: 0;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+    background-color: #FFF;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+
+.nav-profile:hover > .ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-profile .ul {
+    width: 100%;
+    padding: 0 4rem;
+    text-align: center;
+}
+.nav-profile .ul .danger{
+    background-color: tomato;
+    color: #FFF;
+}

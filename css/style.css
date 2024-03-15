@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    /* background-color: #163470; */
+    /* color: #FFF; */
+}
+
+.navbar {
+    height: 80px;
+    line-height: 80px;
+    background-color: #FFF;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.grid {
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.navbar a {
+    color: #000;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.navbar .nav a {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.navbar .nav img {
+    border-radius: 50%;
+}
+
+
+.nav .profile-link {
+    position: relative;
+    display: flex;
+}
+
+
+
+section {
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 10rem;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: #FFF;
+}
+
+/* blog section */
+
+.blog {
+    background-color: #163470;
+}
+
+.blog .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+}
+
+.blog .card {
+    background-color: #FFF;
+    padding: 1rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    width: 320px;
+}
+
+.blog .card .card-title {
+    font-weight: 500;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog .card .card-image {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    border: 1px solid lightgray;
+    margin-bottom: 0.5rem;
+}
+
+.blog .card .card-image img {
+    width: 100%;
+    height: 200px;
+}
+
+
+.blog .card .category-btn {
+    background: #163470;
+    padding: 0.25rem 0.5rem;
+    color: #FFF;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.blog .card .card-body {
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog .blog-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #163470;
+    color: #FFF;
+    margin: 0.5rem auto;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+/* new blog */
+.new-blog .card {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.new-blog .form-group {
+    margin-bottom: 1rem;
+}
+
+.new-blog .form-group:last-child {
+    margin-bottom: 0;
+}
+
+.new-blog label {
+    display: block;
+    font-weight: 500;
+}
+
+
+.new-blog .form-group input,
+.new-blog .form-group select,
+.new-blog .form-group textarea {
+    width: 100%;
+    outline: none;
+    resize: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #999;
+}
+
+.new-blog .form-group button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: 0;
+    border: none;
+    background: #163470;
+    color: #FFF;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+/* category-blog */
+
+.category-title {
+    text-align: center;
+}
+
+
+/* single blog post */
+.post {
+    width: 100%;
+    background-color: #FFF;
+    padding: 2rem 2rem 4rem;
+    margin: 1rem 10rem;
+}
+
+.post h1 {
+    margin-bottom: 1rem;
+}
+.post img {
+    width: 100%;
+}
+.post  p {
+    margin-top: 1rem;
+}
+/* empty-page */
+.empty-page {
+    height: 70vh;
+    background: #163470;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.empty-page span {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* categories section */
+.categories .grid {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+}
+
+.category-button {
+    background: #163470;
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    text-align: center;
+}
+
+/* footer  */
+
+.footer {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
